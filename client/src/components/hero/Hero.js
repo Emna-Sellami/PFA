@@ -15,6 +15,7 @@ function Hero() {
                 <h1>First Class Travel</h1>
                 <h2>Top 1% Locations Worldwide</h2>
             </div>
+            <h2 style={{color:'black',textAlign:'center',marginTop:'8px',fontSize:'35px'}}>Sections </h2>
         </div>
     )
 }

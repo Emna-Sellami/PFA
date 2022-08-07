@@ -1,25 +1,25 @@
 import React from "react";
-import client from "../assets/rating.png";
-import owner from "../assets/owner.png";
+import client from "../../assets/rating.png";
+import owner from "../../assets/owner.png";
 import './About.css'
 
 export default function About() {
   const data = [
     {
       icon: client,
-      title: "Get Best Prices",
+      title: "Client Space",
       subTitle:
-        "Pay through our application and save thousands and get amazing rewards.",
+        "Discover more the spirit of the hotel to reserve your journey ",
     },
     {
       icon: owner,
-      title: "Covid Safe",
+      title: "Owner Space",
       subTitle:
-        "We have all the curated hotels that have all the precaution for a covid safe environment.",
+        "This space is dedicated for the hotel staff",
     },
   ];
   return (
-    <div id="services" style={{padding: '5rem 0', display:' grid' , gap: '1rem'}}>
+    <div name='sections' id="services" style={{padding: '5rem 0', display:' flex' , gap: '1rem'}}>
       {data.map((service, index) => {
         return (
           <div className="service" key={index}>

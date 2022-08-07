@@ -7,13 +7,15 @@ import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 import Hero from './components/hero/Hero'
-import About from "./components/About";
+import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 const App = () => {
  return (
    <div>
      <Navbar/>
      <Hero/>
      <About/>
+     <Footer/>
    </div>
  );
 };

@@ -92,6 +92,11 @@ li {
         transition: 0.3s;
     }
 
+    .nav-icons.icon:hover {
+        transform: scale(1.5);
+        transition: 0.3s;
+    }
+
     .mobile-menu button {
         margin: 1rem;
         width: 90%;
@@ -100,11 +105,14 @@ li {
 
     .nav-menu {
         display: none;
+        cursor: pointer;
     }
 
     .nav-icons {
         display: none;
+        margin: 2rem 0;
     }
+
     .hamburger {
         display: block;
     }
