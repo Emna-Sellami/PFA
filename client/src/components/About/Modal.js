@@ -23,7 +23,6 @@ class Modale extends React.Component {
         <Modal.Header>Enter password</Modal.Header>
         <Modal.Body>
         <form> 
-            
             <div className="form-group">
                 <input 
                     className="form-control"
