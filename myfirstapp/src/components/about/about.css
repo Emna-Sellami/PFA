@@ -47,21 +47,22 @@
 }
 /*----------awrapper------------*/
 .awrapper {
-  background-image: url("../../../public/images/awrapper.webp");
+  background-image: url("../../../public/images/ami.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 30vh;
-  color: #fff;
+  color: black;
 }
 .awrapper .box {
   padding: 70px 0;
 }
 .awrapper img {
   margin-right: 30px;
+  width: 50px;
 }
 .awrapper h1 {
-  font-size: 50px;
+  font-size: 30px;
 }
 .awrapper h3 {
   font-size: 20px;
