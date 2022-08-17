@@ -37,15 +37,16 @@
   header ul {
     padding: 30px 20px;
   }
-  header ul li a {
+  header ul li {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     font-size: large;
     transition: 0.5s;
   }
-  header ul li a:hover {
+  header ul li:hover {
     color: #1eb2a6;
+    cursor: pointer;
   }
   .toggle {
     display: none;

@@ -20,7 +20,7 @@ function Footer() {
                 <div className="bottom">
                     <div className="left">
                         <ul>
-                            <Link to='home' smooth={true} duration={500}><li>Home</li></Link>
+                        <Link to='home'smooth={true} duration={500}><li>Home</li></Link>
                         </ul>
                     </div>
                     <div className="right">

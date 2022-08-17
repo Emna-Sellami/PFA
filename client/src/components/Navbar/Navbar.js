@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link } from "react-scroll"
 import "./NavbarStyles.css"
 
 const Navbar = () => {
@@ -10,12 +10,8 @@ const Navbar = () => {
       <header>
         <nav className='flexSB'>
           <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
-            <li>
-              <Link to='home'smooth={true} duration={500}>Home</Link>
-            </li>
-            <li>
-              <Link  to='sections'smooth={true} duration={500}>Sections</Link>
-            </li>
+              <Link to='home'smooth={true} duration={500}><li>Home</li></Link>
+              <Link to='sections'smooth={true} duration={500}><li>Sections</li></Link>
           </ul>
           <div className='start'>
             <div className='button'><h1>Travelo</h1>

@@ -5,7 +5,7 @@ import background from '../../assets/pool.png'
 
 function Hero() {
     return (
-        <div className='hero'>
+        <div name='home' className='hero'>
             <div className="overlay"></div>
             <div className="content">
                 <h1>First Class Travel</h1>

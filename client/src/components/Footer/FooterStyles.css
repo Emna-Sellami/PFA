@@ -29,6 +29,7 @@
 .footer .icon:hover{
     transform: scale(1.5);
     transition: 0.3s;
+    
 }
 
 .footer .left, .right {
@@ -43,6 +44,19 @@
 .footer li {
     padding: .5rem;
 }
+
+.footer ul li:hover {
+    color: #1eb2a6;
+    cursor: pointer;
+  }
+
+.footer ul li {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: large;
+    transition: 0.5s;
+  }  
 
 @media screen and (max-width: 1140px) {
     .footer ul {
