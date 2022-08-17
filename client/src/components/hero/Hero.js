@@ -1,8 +1,6 @@
 import React from 'react'
 import './HeroStyles.css'
 
-import background from '../../assets/pool.png'
-
 function Hero() {
     return (
         <div name='home' className='hero'>

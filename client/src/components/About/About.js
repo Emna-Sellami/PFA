@@ -3,6 +3,7 @@ import client from "../../assets/rating.png";
 import owner from "../../assets/owner.png";
 import Modale from "./Modal";
 import './About.css'
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -10,11 +11,13 @@ export default function About() {
     <h2 style={{color:'black',textAlign:'center',marginTop:'8px',fontSize:'35px'}}>Sections </h2>
     <div style={{padding: '2rem 0',display:' flex',  gap: '1rem' , paddingBottom:'5rem'}}>
     <div className="service">
+    <Link to='/clientspace' className="box">
       <div className="icon">
         <img src={client} alt="" style={{ height:' 2.4rem'}} />
       </div>
       <h3>Client Space</h3>
       <p>Discover more the spirit of the hotel to reserve your journey</p>
+      </Link>
     </div>
     <div className="service">
       <div className="icon">
