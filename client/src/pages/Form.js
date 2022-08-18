@@ -1,6 +1,5 @@
 import React from 'react';
 import "../assets/css/style.css"
-import { Link } from "react-router-dom";
 class Check extends React.Component{
     render(){
         return (
@@ -15,6 +14,28 @@ class Check extends React.Component{
 			                    </div>
 						    <form>
 							    <div class="row">
+                                <div class="col-md-6">
+									    <div class="form-group">
+										    <span class="form-label">Full Name</span>
+										    <input class="form-control" type="text" required></input>
+									    </div>
+									    <span class="in-out hidden-xs hidden-sm">&#8652;</span>
+								    </div>
+                                    <div class="col-md-6">
+									    <div class="form-group">
+										    <span class="form-label">Email</span>
+										    <input class="form-control" type="email" required></input>
+									    </div>
+									    <span class="in-out hidden-xs hidden-sm">&#8652;</span>
+								    </div>
+                                    <div class="col-md-6">
+									    <div class="form-group">
+										    <span class="form-label">Adress</span>
+										    <input class="form-control" type="text" required></input>
+									    </div>
+									    <span class="in-out hidden-xs hidden-sm">&#8652;</span>
+								    </div>
+                                   
 								    <div class="col-md-6">
 									    <div class="form-group">
 										    <span class="form-label">Check In</span>
@@ -64,9 +85,9 @@ class Check extends React.Component{
 									</div>
 								</div>
 								<div class="col-md-3">
-								<Link to='/Forme' className="form-btn">
-									<button class="submit-btn">Check availability</button>
-								</Link>
+                                <div class="form-btn">
+										<button class="submit-btn">Check availability</button>
+								</div>
 								</div>
 							</div>
 						</form>

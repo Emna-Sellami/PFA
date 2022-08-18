@@ -6,6 +6,7 @@ import { BrowserRouter ,Route,Routes} from "react-router-dom";
 import Checkroom from "./Checkroom"
 import Accueil from "./Accueil";
 import ClientSpace from "./ClientSpace"; 
+import Forme from "./Forme"
 const App = () => {
  return (
    <div>
@@ -13,7 +14,9 @@ const App = () => {
         <Routes>
         <Route  path='/' element={<Accueil/>} />
           <Route  path='/clientspace' element={<ClientSpace/>} />
-          <Route path='/checkroom' element={<Checkroom />}></Route>
+          <Route path='/checkroom' element={<Checkroom />} />
+          <Route path='/Forme' element={<Forme />} />
+
         </Routes>
      </BrowserRouter>
    </div>
