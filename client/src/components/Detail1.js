@@ -10,7 +10,7 @@ const Detail1 = () => {
       <div>
         <Rectangle/>
       </div>
-      <Link to='/Checkroom' className="box">
+      <Link to='/Forme' className="box">
       <button>reserve</button>
       </Link>
       <div className='max-w-[1200px] grid md:grid-cols-2' style={{display:"flex" ,height:"600px", margin:"20px",marginLeft:"40px",gap: '3rem'}}>
