@@ -1,5 +1,6 @@
 import{Button,Modal} from'react-bootstrap';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Modale extends React.Component {
@@ -33,7 +34,7 @@ class Modale extends React.Component {
         </form> 
 
         <button onClick={()=>{this.handleModal()}} class="btn btn-success mt-4">
-            save
+            <Link className="btn btn-link" to={`/ownerspace`}>save</Link>
           </button>
 
         </Modal.Body>
