@@ -7,7 +7,6 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.3s ease-in-out;
     width: 49%;
-    display: flex;
    }
    .service:hover {
     transform: translateX(0.4rem) translateY(-1rem);
