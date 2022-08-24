@@ -7,8 +7,8 @@ import Checkroom from "./Checkroom"
 import Accueil from "./Accueil";
 import ClientSpace from "./ClientSpace";
 import OwnerSpace from "./OwnerSpace";
-import Forme from "./Forme"
-import Modale from "./components/About/Modal";
+import Forme from "./Forme";
+import Edit from "./components/edit";
 const App = () => {
  return (
    <div>
@@ -16,11 +16,10 @@ const App = () => {
         <Routes>
         <Route  path='/' element={<Accueil/>} />
           <Route  path='/clientspace' element={<ClientSpace/>} />
-          <Route  path='/modale' element={<Modale/>} />
           <Route  path='/ownerspace' element={<OwnerSpace/>} />
           <Route path='/checkroom' element={<Checkroom />} />
           <Route path='/Forme' element={<Forme />} />
-
+          <Route path="/edit/:id" element={<Edit />} />
         </Routes>
      </BrowserRouter>
    </div>

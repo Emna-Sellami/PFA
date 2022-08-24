@@ -1,7 +1,6 @@
 import React  from "react";
 import client from "../../assets/rating.png";
 import owner from "../../assets/owner.png";
-import Modale from "./Modal";
 import './About.css'
 import { Link } from "react-router-dom";
 
