@@ -8,8 +8,8 @@ import img3 from "./images/img3.jpg"
 const Room= () => {
 return (
     
-    <section class = "rooms sec-width" id = "rooms">
-    <div class = "title">
+    <section class = "rooms sec-widthh" id = "rooms">
+    <div class = "titlee">
         <h1>rooms</h1>
     </div>
     <div class = "rooms-container">
@@ -38,7 +38,10 @@ return (
                 <p class = "rate">
                     <span>$99.00 /</span> Per Night
                 </p>
-                <button type = "button" class = "btn">book now</button>
+                <Link to='/Forme'>
+                    <button type = "button" class = "btnn">book now</button>
+                </Link>
+                
             </div>
         </article>
         
@@ -67,7 +70,9 @@ return (
                 <p class = "rate">
                     <span>$99.00 /</span> Per Night
                 </p>
-                <button type = "button" class = "btn">book now</button>
+                <Link to='/Forme'>
+                <button type = "button" class = "btnn">book now</button>
+                </Link>
             </div>
         </article>
        
@@ -96,7 +101,9 @@ return (
                 <p class = "rate">
                     <span>$99.00 /</span> Per Night
                 </p>
-                <button type = "button" class = "btn">book now</button>
+                <Link to='/Forme'>
+                <button type = "button" class = "btnn">book now</button>
+                </Link>
             </div>
         </article>
     </div>
