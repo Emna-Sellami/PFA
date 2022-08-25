@@ -1,18 +1,18 @@
 import React from 'react';
 import detail from"./../assets/detail.jpg"
-import spa from"./../assets/spa.png"
+import spa from"./../assets/spa.png";
+import Room from "./Rooms/Singleroom"
+import Button from './Button'
+
 import Rectangle from './rectangle/Rectangle';
 import'./Detail.css'
-import { Link } from "react-router-dom";
 const Detail1 = () => {
   return (
+    
     <div className='w-full bg-white py-16 '>
-      <div>
-        <Rectangle/>
-      </div>
-      <Link to='/Forme' className="box">
-      <button>reserve</button>
-      </Link>
+      <Button/>
+      <Room/>
+      
       <div className='max-w-[1200px] grid md:grid-cols-2' style={{display:"flex" ,height:"600px", margin:"20px",marginLeft:"40px",gap: '3rem'}}>
         <img className='w-[500px] my-4' src={detail} alt='/' />
         <div className='flex flex-col justify-center' style={{textAlign:"center", width:"100%" ,marginTop:"200px"}}>
@@ -40,7 +40,7 @@ const Detail1 = () => {
              turns into a colorful show in the deep blue waters
           </p>
       </div>
-
+      
       <div className='max-w-[1200px] grid md:grid-cols-2' style={{display:"flex" ,height:"600px", margin:"20px",marginLeft:"40px",gap: '3rem'}}>
         
         <div className='flex flex-col justify-center' style={{textAlign:"center", width:"100%" ,marginTop:"200px"}}>
@@ -59,8 +59,13 @@ const Detail1 = () => {
         </div>
         <img className='w-[500px] my-4' src={spa} alt='/' />
       </div>
-
+      <div>
+        <Rectangle/>
+      </div>
     </div>
+     
+    
+    
   );
 };
 
