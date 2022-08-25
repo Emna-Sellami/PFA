@@ -4,8 +4,9 @@ import Navbar from "./Navbar/Navbar";
 
 const Contact = () => {
 return (
-    <main>
-    
+    <div>
+    <Navbar/>
+
 <div className="container contact">
     
     <div className="row" >
@@ -42,8 +43,7 @@ return (
         </div>
     </div>
 </div>
-<Navbar/>
-</main>
+</div>
 )
 }
 export default Contact
