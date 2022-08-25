@@ -10,13 +10,15 @@ import OwnerSpace from "./OwnerSpace";
 import Forme from "./Forme";
 import Edit from "./components/edit";
 import Review from "./components/Review/Review"
-import Contact from "./components/Contact"
+import Contact from "./components/Contact";
+import Aboutt from "./Aboutt"
 const App = () => {
  return (
    <div>
      <BrowserRouter>
         <Routes>
         <Route  path='/' element={<Accueil/>} />
+          <Route  path='/aboutT' element={<Aboutt/>} />
           <Route  path='/clientspace' element={<ClientSpace/>} />
           <Route  path='/ownerspace' element={<OwnerSpace/>} />
           <Route path='/checkroom' element={<Checkroom />} />
