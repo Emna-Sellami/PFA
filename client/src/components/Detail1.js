@@ -10,6 +10,7 @@ const Detail1 = () => {
   return (
     
     <div className='w-full bg-white py-16 '>
+      
       <Button/>
       <Room/>
       

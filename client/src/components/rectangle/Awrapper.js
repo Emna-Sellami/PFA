@@ -7,50 +7,40 @@ import img4 from"../../assets/CONFERENCE.png"
 const Awrapper = () => {
   return (
     <>
-      <section className='awrapper'>
-        <div className='container'style={{ marginTop:"40px" }}>
-              <div className='box '>
-              
-              <div  style={{ display:"flex" ,gap:"2rem" ,color:"white"}}>
-                <div className='img'>
-                  <img src={img1} alt='' />
+      <section class="cards-section sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src={img1} alt="" class="img-fluid" />
+                        <h5>Health & Fitness</h5>
+                        
+                    </div>
                 </div>
-                <div className='text'>
-                  <h1> Health & Fitness</h1>
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src={img2} alt="" class="img-fluid"/>
+                        <h5>RESTAURANT</h5>
+                        
+                    </div>
                 </div>
-              </div>
-
-              <div style={{ display:"flex" ,gap:"1rem" ,color:"white"}}>
-                <div className='img'>
-                  <img src={img2} alt='' />
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src={img3} alt="" class="img-fluid"/>
+                        <h5>SPACIOUS ROOMS</h5>
+                      
+                    </div>
                 </div>
-                <div className='text'>
-                  <h1>RESTAURANT</h1>
-                </div>
-              </div>
-
-              <div  style={{ display:"flex" ,gap:"1rem",color:"white"}}>
-                <div className='img'>
-                  <img style={{marginLeft:"35px" }} src= {img3} alt='' />
-                </div>
-                <div className='text'>
-                  <h1>SPACIOUS ROOMS</h1>
-                </div>
-              </div>  
-
-              <div  style={{ display:"flex" ,gap:"1rem",color:"white"}}>
-                <div className='img'>
-                  <img src={img4} alt='' />
-                </div>
-                <div className='text'>
-                  <h1>CONFERENCE ROOM</h1>
-                </div>
-              </div>
-
-              </div>
-        
+                <div class="col-md-6 col-lg-3 col-sm-6">
+                    <div class="cards-inner">
+                        <img src={img4} alt="" class="img-fluid"/>
+                        <h5>CONFERENCE ROOM</h5>
+                     
+                    </div>
+                </div>                                                
+            </div>
         </div>
-      </section>
+    </section> 
     </>
   )
 }
