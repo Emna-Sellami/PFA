@@ -9,9 +9,7 @@ const Room= () => {
 return (
     
     <section class = "rooms sec-widthh" id = "rooms">
-    <div class = "titlee">
-        <h1>rooms</h1>
-    </div>
+   
     <div class = "rooms-container">
         <article class = "room">
             <div class = "room-image">
