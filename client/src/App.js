@@ -9,6 +9,8 @@ import ClientSpace from "./ClientSpace";
 import OwnerSpace from "./OwnerSpace";
 import Forme from "./Forme";
 import Edit from "./components/edit";
+import Review from "./components/Review/Review"
+import Contact from "./components/Contact"
 const App = () => {
  return (
    <div>
@@ -20,6 +22,9 @@ const App = () => {
           <Route path='/checkroom' element={<Checkroom />} />
           <Route path='/Forme' element={<Forme />} />
           <Route path="/edit/:id" element={<Edit />} />
+          <Route path='/Review' element={<Review />} />
+          <Route path='/Contact' element={<Contact />} />
+
         </Routes>
      </BrowserRouter>
    </div>

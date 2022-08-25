@@ -1,29 +1,56 @@
-import React, { useState } from "react"
-import { Link } from "react-scroll"
-import "./NavbarStyles.css"
+import React, { useState, useRef, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { social } from './data';
+import logo from './logo.jpg';
+import './index.css';
+import { Link } from "react-router-dom";
+import { Link as LinkRoll } from 'react-scroll'
 
 const Navbar = () => {
-  const [click, setClick] = useState(false)
-
+  const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
+  };
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = '0px';
+    }
+  }, [showLinks]);
   return (
-    <>
-      <header>
-        <nav className='flexSB'>
-          <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
-              <Link to='home'smooth={true} duration={500}><li>Home</li></Link>
-              <Link to='sections'smooth={true} duration={500}><li>Sections</li></Link>
-          </ul>
-          <div className='start'>
-            <div className='button'><h1>Travelo</h1>
-            <span>Your Best Hotel</span></div>
-          </div>
-          <button className='toggle' onClick={() => setClick(!click)}>
-            {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
+    <nav>
+      <div className='nav-center'>
+        <div className='nav-header'>
+          <img src={logo} className='logo' alt='logo' />
+          <button className='nav-toggle' onClick={toggleLinks}>
+            <FaBars />
           </button>
-        </nav>
-      </header>
-    </>
-  )
-}
+        </div>
+        <div className='links-container' ref={linksContainerRef}>
+          <ul className='links' ref={linksRef}>
+            <Link to={`/ClientSpace`}>Home</Link>
+            <LinkRoll to='sections'smooth={true} duration={500}>section</LinkRoll>
+            <Link to={`/Review`}>Review</Link>
+            <Link to={`/Contact`}>Contact</Link>
+          </ul>
+        </div>
+        <ul className='social-icons'>
+          {social.map((socialIcon) => {
+            const { id, url, icon } = socialIcon;
+            return (
+              <li key={id}>
+                <a href={url}>{icon}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
