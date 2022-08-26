@@ -1,6 +1,6 @@
 import React from "react";
 import HeroImage from "../components/HeroImage/HeroImage";
-import bgImage from "../assets/banner-img.jpg";
+import bgImage from "../assets/im3.jpg";
 import Navbar  from "../components/Navbar/Navbar";
 import AboutInfo from '../components/AboutInfo/AboutInfo'
 import OurData from '../components/OurData/OurData'

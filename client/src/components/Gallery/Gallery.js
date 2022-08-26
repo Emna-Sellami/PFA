@@ -8,7 +8,7 @@ import imageItem4 from "../../assets/im3.jpg";
 import imageItem5 from "../../assets/im4.jpg";
 import imageItem6 from "../../assets/pasta.jpg";
 import imageItem7 from "../../assets/chef.jpg";
-import imageItem8 from "../../assets/spa.png";
+import imageItem8 from "../../assets/staff.jpg";
 import imageItem9 from "../../assets/detail.jpg";
 import imageItem10 from "../../assets/burger.jpg";
 
