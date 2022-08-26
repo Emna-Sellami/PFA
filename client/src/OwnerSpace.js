@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
  
 const Client = (props) => (
  <tr>
@@ -13,13 +14,13 @@ const Client = (props) => (
    <td>{props.client.adults}</td>
    <td>{props.client.children}</td>
    <td>
-     <Link className="btn btn-link" to={`/edit/${props.client._id}`}>Edit</Link> |
+     <Link className="btn btn-link" to={`/edit/${props.client._id}`}><i className="material-icons">&#xE254;</i></Link> |
      <button className="btn btn-link"
        onClick={() => {
          props.deleteClient(props.client._id);
        }}
      >
-       Delete
+      <i className="material-icons">&#xE872;</i>
      </button>
    </td>
  </tr>
@@ -73,8 +74,8 @@ export default function OwnerSpace() {
  
  // This following section will display the table with the records of individuals.
  return (
-   <div>
-     <h3>Client List</h3>
+   <div className="crud shadow-lg mb-5 mt-5 bg-body rounded " style={{padding:"1rem", marginLeft:"50px", marginRight:"50px", color:"green"}}>
+     <h3 className=" offset-sm-2 mt-5 mb-4 text-gred" style={{width:"60%", textAlign:"center", fontSize: "33px"}}>Client List</h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
          <tr>
