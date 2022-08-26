@@ -78,15 +78,15 @@ export default function Edit() {
  
  // This following section will display the form that takes input from the user to update the data.
  return (
-   <div>
-     <h3>Update Client</h3>
-     <form onSubmit={onSubmit}>
-							    <div className="row">
+   <div className='w-75 mx-auto shadow p-5 mt-3' style={{marginTop:'5rem'}}>
+     <h3 className='text-center mb-4' style={{marginTop:'5rem'}}>Update Client</h3>
+     <form onSubmit={onSubmit} style={{paddingLeft:'12rem',marginBottom:'5rem'}}>
+							    <div className="row" >
 
-                                    <div className="col-md-6">
+                    <div className="col-md-6">
 									    <div className="form-group">
 										    <span className="form-label">Name</span>
-										    <input className="form-control radio" 
+										    <input className="form-control radio form-control-lg" 
 											       type="text"
 												   required
 												   id="name"
@@ -99,7 +99,7 @@ export default function Edit() {
 									<div className="col-md-6">
 									    <div className="form-group">
 										    <span className="form-label">Surname</span>
-										    <input className="form-control radio"
+										    <input className="form-control radio form-control-lg"
 											      type="text"
 												   required
 												   id="surname"
@@ -109,15 +109,15 @@ export default function Edit() {
 									    
 								    </div>
 
-                                    <div className="col-md-6">
+                    <div className="col-md-6">
 									    <div className="form-group">
 										    <span className="form-label">Email</span>
-										    <input className="form-control radio" 
+										    <input className="form-control radio form-control-lg" 
 											      type="email" 
 												   required
 												   id="email"
-                                       value={form.email}
-                                       onChange={(e) => updateForm({ email: e.target.value })}/>
+                           value={form.email}
+                           onChange={(e) => updateForm({ email: e.target.value })}/>
 									    </div>
 									    
 								    </div>
@@ -125,12 +125,12 @@ export default function Edit() {
                     <div className="col-md-6">
 									    <div className="form-group">
 										    <span className="form-label">Phone</span>
-										    <input className="form-control radio" 
+										    <input className="form-control radio form-control-lg" 
 											      type="text" 
 												   required
 												   id="phone"
-                                       value={form.phone}
-                                       onChange={(e) => updateForm({ phone: e.target.value })}/>
+                           value={form.phone}
+                           onChange={(e) => updateForm({ phone: e.target.value })}/>
 									    </div>
 									    
 								    </div>
@@ -138,12 +138,12 @@ export default function Edit() {
 								    <div className="col-md-6">
 									    <div className="form-group">
 										    <span className="form-label">Check In</span>
-										    <input className="form-control radio" 
+										    <input className="form-control radio form-control-lg" 
 											      type="date" 
 												   required
 												   id="checkin"
-                                       value={form.checkin}
-                                       onChange={(e) => updateForm({ checkin: e.target.value })}/>
+                           value={form.checkin}
+                           onChange={(e) => updateForm({ checkin: e.target.value })}/>
 									    </div>
 									    
 								    </div>
@@ -151,12 +151,12 @@ export default function Edit() {
 								    <div className="col-md-6">
 									    <div className="form-group">
 										    <span className="form-label">Check out</span>
-										    <input className="form-control" 
+										    <input className="form-control form-control-lg" 
 											      type="date" 
 												   required
 												   id="checkout"
-                                       value={form.checkout}
-                                       onChange={(e) => updateForm({ checkout: e.target.value })}></input>
+                           value={form.checkout}
+                           onChange={(e) => updateForm({ checkout: e.target.value })}></input>
 									    </div>
 								    </div>
 
@@ -326,7 +326,7 @@ export default function Edit() {
                   <input
                     type="submit"
                     value="Update Client"
-                    className="submit-btn"
+                    className="btn  btn-block mt-3"
                   />
 									</div>
 								</div>

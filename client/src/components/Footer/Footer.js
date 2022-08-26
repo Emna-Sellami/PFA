@@ -8,7 +8,7 @@ function Footer() {
         <div className='footer'>
             <div className="container">
                 <div className="top">
-                    <h3>TRAVELO.</h3>
+                    <h3>Gold Hotel</h3>
                     <div className="social">
                         <FaFacebook className='icon' />
                         <FaInstagram className='icon' />
@@ -25,7 +25,7 @@ function Footer() {
                     </div>
                     <div className="right">
                         <ul>
-                            <li><span>Copyright &copy; 2021 Travelo. All rights reserved</span></li>
+                            <li><span>Copyright &copy; 2022 Gold Hotel. All rights reserved</span></li>
                             
                         </ul>
                     </div>

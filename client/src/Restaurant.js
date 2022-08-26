@@ -1,16 +1,16 @@
-import About from './pages/aboutUs';
+import Restau from "./pages/restau";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
-const Aboutt = () => {
+const Restaurant = () => {
   return (
     <div>
     <Navbar/>
-    <About /> 
+    <Restau/> 
     <Footer/>
     </div>
   );
  };
   
 
-export default Aboutt;
+export default Restaurant;

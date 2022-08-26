@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 function Review() {
   return (
     
-    <main>
+    <div>
         <Navbar/>
       <section className='container'>
 
@@ -14,7 +14,7 @@ function Review() {
         </div>
         <Re />
       </section>
-    </main>
+    </div>
   );
 }
 

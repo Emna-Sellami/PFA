@@ -36,7 +36,8 @@ const Navbar = () => {
             <LinkRoll to='sections'smooth={true} duration={500}>section</LinkRoll>
             <Link to={`/Review`}>Review</Link>
             <Link to={`/Contact`}>Contact</Link>
-            <Link to={'/aboutT'}>about us </Link>
+            <Link to={'/aboutT'}>About us </Link>
+            <Link to={'/restaurant'}> Restaurant</Link>
           </ul>
         </div>
         <ul className='social-icons'>

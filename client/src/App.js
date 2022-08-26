@@ -11,7 +11,8 @@ import Forme from "./Forme";
 import Edit from "./components/edit";
 import Review from "./components/Review/Review"
 import Contact from "./components/Contact";
-import Aboutt from "./Aboutt"
+import Aboutt from "./Aboutt";
+import Restaurant from "./Restaurant"
 const App = () => {
  return (
    <div>
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/edit/:id" element={<Edit />} />
           <Route path='/Review' element={<Review />} />
           <Route path='/Contact' element={<Contact />} />
+          <Route path='/restaurant' element={<Restaurant/>} />
 
         </Routes>
      </BrowserRouter>
