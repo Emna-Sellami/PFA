@@ -4,6 +4,8 @@ import Categories from "../components/categories";
 import items from "../components/data";
 import logo from "../assets/logo.JPG";
 import "../assets/css/Restau.css"
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
@@ -24,6 +26,7 @@ export default function Restau () {
   return (
     
       <div >
+        <Navbar/>
         <div className="title">
           <img src={logo} alt="logo" className="logo" />
           <h2>Menu List</h2>
@@ -39,6 +42,7 @@ export default function Restau () {
         <div className="menu-items">
            <Menu items={menuItems} />
           </div>
+          <Footer/>
       </div>
 
   );
