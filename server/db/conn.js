@@ -4,12 +4,33 @@ const client = new MongoClient(Db, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+const contact = new MongoClient(Db, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
  
 var _db;
  
 module.exports = {
   connectToServer: function (callback) {
     client.connect(function (err, db) {
+      // Verify we got a good "db" object
+      if (db)
+      {
+        _db = db.db("HotelManagment");
+        console.log("Successfully connected to MongoDB."); 
+      }
+      return callback(err);
+         });
+  },
+ 
+  getDb: function () {
+    return _db;
+  },
+};
+module.exports = {
+  connectToServer: function (callback) {
+    contact.connect(function (err, db) {
       // Verify we got a good "db" object
       if (db)
       {
