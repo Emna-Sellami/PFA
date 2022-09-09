@@ -7,6 +7,7 @@ import Checkroom from "./Checkroom"
 import Accueil from "./Accueil";
 import ClientSpace from "./ClientSpace";
 import OwnerSpace from "./OwnerSpace";
+import Contactspace from "./Contactspace";
 import Forme from "./Forme";
 import Edit from "./components/edit";
 import Review from "./components/Review/Review"
@@ -22,6 +23,7 @@ const App = () => {
           <Route  path='/aboutT' element={<Aboutt/>} />
           <Route  path='/clientspace' element={<ClientSpace/>} />
           <Route  path='/ownerspace' element={<OwnerSpace/>} />
+          <Route  path='/contactspace' element={<Contactspace/>} />
           <Route path='/checkroom' element={<Checkroom />} />
           <Route path='/Forme' element={<Forme />} />
           <Route path="/edit/:id" element={<Edit />} />

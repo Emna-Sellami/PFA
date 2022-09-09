@@ -93,6 +93,9 @@ export default function OwnerSpace() {
        </thead>
        <tbody>{OwnerSpace()}</tbody>
      </table>
+     <Link className="btn btn-link" to={`/Contactspace`}>
+      <button>Our messages</button>
+      </Link> 
    </div>
  );
 }
